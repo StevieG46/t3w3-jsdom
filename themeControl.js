@@ -1,9 +1,11 @@
 const themes = {
     light: {
-        background: "white"
+        background: "white",
+        text:"darkblue"
     },
     dark: {
-        background: "grey"
+        background: "grey",
+        text:"white"
     }
 }
 
