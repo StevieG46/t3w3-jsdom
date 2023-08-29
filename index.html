@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Import the list generation & item deletion logic: -->
     <script src="./script.js"></script>
+    <!-- Import the CSS theme control logic: -->
+    <script src="./themeControl.js"></script>
 </head>
 <body>
 
@@ -19,8 +22,21 @@
 
     </ul>
 
+    <button onclick="changeCSSTheme('dark')">
+		Change theme to dark
+	</button>
+
+    <button onclick="changeCSSTheme('light')">
+		Change theme to light
+	</button>
+
+    <button onclick="toggleLightDark()">
+    Toggle light/dark
+    </button>
+    
     <script>
         createListOfMedia()
+        changeCSSTheme("dark")
     </script>
 
 </body>
